@@ -128,23 +128,22 @@ header {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Smaller font size for the heading on small screens */
     }
 
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Smaller font size for the paragraph on small screens */
     }
 }
 
-.hero h1 {
-    font-size: 3rem; /* Font size for the main heading */
-    margin-bottom: 20px;
-    color: #FFFF00;
-}
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem; /* Even smaller font size for the heading on very small screens */
+    }
 
-.hero p {
-    font-size: 1.5rem; /* Increase the font size for the paragraph text */
-    margin-bottom: 20px; /* Reduce the margin for better spacing */
+    .hero p {
+        font-size: 1rem; /* Even smaller font size for the paragraph on very small screens */
+    }
 }
 
 
