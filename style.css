@@ -112,18 +112,20 @@ header {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/background.jpg');
     width: 100%;
-    height: 100vh; /* Adjusted for responsiveness */
+    min-height: 100vh; /* Changed from height to min-height for better responsiveness */
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center horizontally */
+    align-items: center;
     text-align: center;
+    padding: 20px; /* Added padding for better spacing on smaller screens */
     color: #ffffff;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
 .hero h1 {
@@ -136,7 +138,6 @@ header {
     font-size: 1.5rem; /* Paragraph font size */
     margin-bottom: 20px; /* Spacing for paragraphs */
 }
-
 
 @media (max-width: 768px) {
     .hero h1 {
