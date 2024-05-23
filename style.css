@@ -126,6 +126,18 @@ header {
     color: #ffffff;
 }
 
+.hero h1 {
+    font-size: 3rem; /* Main heading font size */
+    margin-bottom: 20px;
+    color: #FFFF00; /* Heading color */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Paragraph font size */
+    margin-bottom: 20px; /* Spacing for paragraphs */
+}
+
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem; /* Smaller font size for the heading on small screens */
